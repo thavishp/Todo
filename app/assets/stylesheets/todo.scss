@@ -1,0 +1,29 @@
+// Place all the styles related to the Todo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.action_link{
+  padding: 0.2em 0.3em;
+  border: 1px solid #000000;
+  background-color: #4d94ff;
+  color: #000000;
+}
+
+.content{
+  margin-top: 3.5em;
+}
+
+.row{
+  margin-top: 1.5em;
+}
+
+// Error Styling
+#error_explanation{
+  h2{
+    color: #FF0000;
+    font-size: 40px;
+  }
+  ul{
+    list-style: circle;
+  }
+}

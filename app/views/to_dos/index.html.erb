@@ -1,0 +1,35 @@
+<% if !flash[:notice].blank? %>
+	<div class="notice">
+		<%= flash[:notice] %>
+	</div>
+<% end %>  
+
+<div class="row">
+<div class="col s2 offset-s2">
+	<%= link_to("New Todo", new_to_do_path, class: 'btn') %>
+</div>
+</div>
+<div class="row">
+<div class="col s8 offset-s2">
+	<table class="bordered striped">
+		<thead>
+			<tr>
+				<th>Todo Title</th>
+				<th>Todo Content</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @todos.each do |todo| %>
+				<tr>
+					<td><%= todo.title %></td>
+					<td><%= todo.content %></td>
+					<td>
+						<%= link_to('Completed', to_do_path(todo), method: :delete, class: 'btn') %>
+						<%= link_to("Edit", edit_to_do_path(todo), class: 'btn') %>
+					</td>
+				</tr>
+			<% end %>
+	</table>
+</div>
+</div>

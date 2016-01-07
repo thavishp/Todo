@@ -1,0 +1,9 @@
+<%= link_to("<< Your Todos", {action: 'index'}) %>
+
+<%= form_for(@todo) do |f| %>
+
+	<%= render(partial: "form", locals: {f: f}) %>
+
+	<%= submit_tag("Edit Todo", class: 'btn waves-effect waves-light') %>
+
+<% end %>

@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="input-field">
+		<div class="col s12">
+			<%= f.text_field(:title, placeholder: 'Title') %>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col s12">
+		<%#= f.label(:content, "Content") %>
+		<%= f.text_area(:content, class: 'materialize-textarea', placeholder: 'Content') %>
+	</div>
+</div>

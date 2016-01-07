@@ -1,0 +1,9 @@
+<%= link_to("<< Your Todos", {action: 'index'}) %>
+
+<%= form_for(:todo, url: {action: 'create'}) do |f| %>
+
+	<%= render(partial: "form", locals: {f: f}) %>
+
+	<%= submit_tag("Create Todo", class: 'btn waves-effect waves-light') %>
+
+<% end %>
