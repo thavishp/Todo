@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users
-  resources :to_dos
+  resources :to_dos do
+    collection do
+      get 'test_error'
+    end
+  end
+
+  get ':controller(/:action(/:id))'
 
   root 'to_dos#index'
 
