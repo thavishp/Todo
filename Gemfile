@@ -30,6 +30,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
 
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
