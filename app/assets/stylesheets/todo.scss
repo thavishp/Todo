@@ -29,7 +29,7 @@
 }
 
 .nav-wrapper{
-  
+
 
   .brand-logo, .nav-link{
     padding: 0 0.2em;
@@ -38,4 +38,12 @@
 
 .divider{
   margin-bottom: 0.3em;
+}
+
+.user_button, .user_button_primary{
+  margin-top: 0.5em;
+}
+
+.user_button{
+  background-color: #c15432 !important;
 }

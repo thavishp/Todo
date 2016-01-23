@@ -1,5 +1,6 @@
 <h2>Log in</h2>
-
+<h5> Please log in or sign up to access your todos </h5>
+<br>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -19,7 +20,7 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class: 'btn' %>
   </div>
 <% end %>
 
