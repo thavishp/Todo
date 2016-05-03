@@ -10,4 +10,4 @@ This is a test application I created to test my Ruby on Rails skills and knowled
 
 ## Setup
 Run ``rake db:migrate``  
-Done!
+Run server
